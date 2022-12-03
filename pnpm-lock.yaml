@@ -57,7 +57,7 @@ importers:
       prettier: ^2.7.1
       prettier-plugin-svelte: ^2.7.0
       sharer.js: ^0.5.1
-      static-link-share: 0.0.1
+      static-link-share: workspace:*
       svelte: ^3.44.0
       svelte-check: ^2.7.1
       svelte-preprocess: ^4.10.6

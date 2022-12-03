@@ -2,7 +2,7 @@
 	"name": "svelte-link-share",
 	"version": "0.0.1",
 	"description": "A Share link component library",
-	"homepage": "https://ennoriel.github.io/link-share",
+	"homepage": "https://ennoriel.github.io/Ennoriel/link-share",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Ennoriel/link-share"
@@ -17,7 +17,7 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"lint": "eslint .",
 		"prettier": "prettier --write --plugin-search-dir=. .",
-		"package": "svelte-package"
+		"package": "pnpm build && svelte-package"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -39,7 +39,7 @@
 		"vite": "^3.0.0"
 	},
 	"dependencies": {
-		"static-link-share": "0.0.1"
+		"static-link-share": "workspace:*"
 	},
 	"type": "module",
 	"keywords": [
