@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/Link.svelte';
-	import { twitter as config } from 'link-share-static';
+	import { twitter as config } from 'static-link-share';
 
 	export let title: string | undefined = undefined;
 

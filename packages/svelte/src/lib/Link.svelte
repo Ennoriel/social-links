@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '$lib/Icon.svelte';
-	import { getUrl, type Config } from 'link-share-static';
+	import { getUrl, type Config } from 'static-link-share';
 
 	export let config: Config;
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/Link.svelte';
-	import { facebook as config } from 'link-share-static';
+	import { facebook as config } from 'static-link-share';
 
 	export let u: string;
 

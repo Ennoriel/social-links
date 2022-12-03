@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/Link.svelte';
-	import { linkedin as config } from 'link-share-static';
+	import { linkedin as config } from 'static-link-share';
 
 	export let title: string | undefined = undefined;
 
