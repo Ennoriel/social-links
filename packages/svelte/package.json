@@ -1,6 +1,6 @@
 {
 	"name": "svelte-link-share",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A Share link component library",
 	"homepage": "https://ennoriel.github.io/Ennoriel/link-share",
 	"repository": {
@@ -12,7 +12,6 @@
 	"scripts": {
 		"dev": "vite dev --open --host",
 		"build": "vite build",
-		"ci:publish": "pnpm publish ./package",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"lint": "eslint .",
@@ -47,5 +46,8 @@
 		"link share"
 	],
 	"svelte": "./index.js",
-	"types": "./index.d.ts"
+	"types": "./index.d.ts",
+	"publishConfig": {
+	  "directory": "package"
+	}
 }

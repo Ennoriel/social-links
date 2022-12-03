@@ -9,7 +9,6 @@
   "scripts": {
     "build": "rollup -c",
     "package": "pnpm build",
-		"ci:publish": "pnpm publish",
     "changeset": "changeset",
     "lint": "eslint --ignore-path .gitignore .",
     "prettier": "prettier --write --plugin-search-dir=. .",
