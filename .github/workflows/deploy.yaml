@@ -21,5 +21,6 @@ jobs:
       - run: pnpm install --frozen-lockfile -r
       - run: pnpm package
       - run: pnpm ci:publish
+        continue-on-error: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
