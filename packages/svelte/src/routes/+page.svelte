@@ -1,9 +1,9 @@
 <script>
-    import { Facebook } from '$lib';
-    import { Twitter } from '$lib';
-    import { LinkedIn } from '$lib';
+	import { Facebook } from '$lib';
+	import { Twitter } from '$lib';
+	import { LinkedIn } from '$lib';
 </script>
 
-<Facebook u="fghnbgty?./" title="" xfsdf=""/>
-<Twitter title="fgujnbnj"/>
-<LinkedIn title="fgujnbnj"/>
+<Facebook u="fghnbgty?./" title="" />
+<Twitter title="fgujnbnj" />
+<LinkedIn title="fgujnbnj" />

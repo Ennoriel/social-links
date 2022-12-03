@@ -1,9 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "pnpm -r build"
-  },
-  "devDependencies": {
-    "@changesets/cli": "^2.24.3"
+    "build": "pnpm -r build",
+    "package": "pnpm -r package",
+    "ci:publish": "pnpm -r publish",
+    "lint": "pnpm -r lint",
+    "prettier": "pnpm -r prettier"
   }
 }

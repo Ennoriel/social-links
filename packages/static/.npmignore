@@ -1,0 +1,6 @@
+.eslintignore
+.eslintrc.js
+.gitignore
+.prettierignore
+.prettierrc.json
+jest.config.js

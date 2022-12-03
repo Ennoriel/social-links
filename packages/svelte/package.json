@@ -1,13 +1,23 @@
 {
-	"name": "link-share-svelte",
+	"name": "svelte-link-share",
 	"version": "0.0.1",
+	"description": "A Share link component library",
+	"homepage": "https://ennoriel.github.io/link-share",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Ennoriel/link-share"
+	},
+	"author": "Maxime Dupont <m.dupont103@gmail.com>",
+	"license": "MIT",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "svelte-kit sync && svelte-package",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"dev": "vite dev --open --host",
+		"build": "vite build",
+		"ci:publish": "pnpm publish ./package",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"lint": "eslint .",
+		"prettier": "prettier --write --plugin-search-dir=. .",
+		"package": "svelte-package"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -29,9 +39,13 @@
 		"vite": "^3.0.0"
 	},
 	"dependencies": {
-		"link-share-static": "workspace:*"
+		"static-link-share": "0.0.1"
 	},
 	"type": "module",
+	"keywords": [
+		"svelte",
+		"link share"
+	],
 	"svelte": "./index.js",
 	"types": "./index.d.ts"
 }
