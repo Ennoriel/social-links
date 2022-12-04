@@ -3,7 +3,7 @@
   "scripts": {
     "build": "pnpm -r build",
     "package": "pnpm -r package",
-    "publish": "pnpm -r publish",
+    "ci:publish": "pnpm -r publish",
     "lint": "pnpm -r lint",
     "prettier": "pnpm -r prettier"
   }

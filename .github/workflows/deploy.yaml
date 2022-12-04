@@ -20,6 +20,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: pnpm install --frozen-lockfile -r
       - run: pnpm package
-      - run: pnpm publish
+      - run: pnpm ci:publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
