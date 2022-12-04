@@ -1,51 +1,51 @@
 {
-  "name": "static-link-share",
-  "version": "0.0.1",
-  "description": "base utils for use in component libraries",
-  "main": "dist/cjs.js",
-  "module": "dist/esm.js",
-  "browser": "dist/umd.js",
-  "types": "dist/types.d.ts",
-  "scripts": {
-    "build": "rollup -c",
-    "package": "pnpm build",
-    "changeset": "changeset",
-    "lint": "eslint --ignore-path .gitignore .",
-    "prettier": "prettier --write --plugin-search-dir=. .",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Ennoriel/link-share.git"
-  },
-  "keywords": [
-    "typescript"
-  ],
-  "author": "Maxime Dupont",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Ennoriel/link-share/issues"
-  },
-  "homepage": "https://github.com/Ennoriel/link-share",
-  "devDependencies": {
-    "@changesets/cli": "^2.24.3",
-    "@rollup/plugin-commonjs": "^22.0.2",
-    "@rollup/plugin-typescript": "^8.3.3",
-    "@types/jest": "^28.1.4",
-    "@typescript-eslint/eslint-plugin": "^5.30.5",
-    "@typescript-eslint/parser": "^5.30.5",
-    "eslint": "^8.19.0",
-    "eslint-config-prettier": "^8.5.0",
-    "jest": "^28.1.2",
-    "jest-environment-jsdom": "^29.0.1",
-    "prettier": "^2.7.1",
-    "rollup": "^2.75.7",
-    "rollup-plugin-dts": "^4.2.2",
-    "ts-jest": "^28.0.5",
-    "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "form-data-to-object": "^0.2.0"
-  }
+	"name": "static-link-share",
+	"version": "0.0.1",
+	"description": "base utils for use in component libraries",
+	"main": "dist/cjs.js",
+	"module": "dist/esm.js",
+	"browser": "dist/umd.js",
+	"types": "dist/types.d.ts",
+	"scripts": {
+		"build": "rollup -c",
+		"package": "pnpm build",
+		"changeset": "changeset",
+		"lint": "eslint --ignore-path .gitignore .",
+		"prettier": "prettier --write --plugin-search-dir=. .",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Ennoriel/link-share.git"
+	},
+	"keywords": [
+		"typescript"
+	],
+	"author": "Maxime Dupont",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Ennoriel/link-share/issues"
+	},
+	"homepage": "https://github.com/Ennoriel/link-share",
+	"devDependencies": {
+		"@changesets/cli": "^2.24.3",
+		"@rollup/plugin-commonjs": "^22.0.2",
+		"@rollup/plugin-typescript": "^8.3.3",
+		"@types/jest": "^28.1.4",
+		"@typescript-eslint/eslint-plugin": "^5.30.5",
+		"@typescript-eslint/parser": "^5.30.5",
+		"eslint": "^8.19.0",
+		"eslint-config-prettier": "^8.5.0",
+		"jest": "^28.1.2",
+		"jest-environment-jsdom": "^29.0.1",
+		"prettier": "^2.7.1",
+		"rollup": "^2.75.7",
+		"rollup-plugin-dts": "^4.2.2",
+		"ts-jest": "^28.0.5",
+		"tslib": "^2.4.0",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"form-data-to-object": "^0.2.0"
+	}
 }

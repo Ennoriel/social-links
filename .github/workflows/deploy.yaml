@@ -19,6 +19,7 @@ jobs:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
       - run: pnpm install --frozen-lockfile -r
+      - run: pnpm prepare
       - run: pnpm package
       - run: pnpm ci:publish
         env:

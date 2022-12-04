@@ -9,3 +9,6 @@ node_modules
 .env
 .env.*
 !.env.example
+/src/lib/icons/*
+!/src/lib/icons/.gitkeep
+!/src/lib/icons/README.md

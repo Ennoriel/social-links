@@ -1,10 +1,11 @@
+export default ({ args }) => `
 import { SvelteComponentTyped } from 'svelte';
 import type { StylingProps } from '$lib/types.js';
 
 declare const __propDef: {
 	props: Partial<svelte.JSX.HTMLAttributes<HTMLElementTagNameMap['a']>> &
 		StylingProps & {
-			u: string;
+			${args.map(({ key, type }) => `${key}: ${type};`).join('\n\t\t\t')}
 		};
 	events: void;
 	slots: void;
@@ -18,3 +19,4 @@ export default class LinkedIn extends SvelteComponentTyped<
 	LinkedInSlots
 > {}
 export {};
+`;

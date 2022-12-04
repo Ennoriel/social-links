@@ -1,8 +1,9 @@
+export default ({ name, args }) => `
 <script lang="ts">
 	import Link from '$lib/Link.svelte';
-	import { facebook as config } from 'static-link-share';
+	import { ${name.toLocaleLowerCase()} as config } from 'static-link-share';
 
-	export let u: string;
+	${args.map(({ key, type }) => `export let ${key}: ${type};`).join('\n\t')}
 
 	export let size = 32;
 	export let color: string | undefined = undefined;
@@ -13,7 +14,7 @@
 </script>
 
 <Link
-	params={{ u }}
+	params={{ ${args.map(({ key }) => key).join(', ')} }}
 	{config}
 	{size}
 	{color}
@@ -23,3 +24,4 @@
 	{round}
 	{...$$restProps}
 />
+`;

@@ -10,6 +10,7 @@
 	"author": "Maxime Dupont <m.dupont103@gmail.com>",
 	"license": "MIT",
 	"scripts": {
+		"prepare": "node ../../scripts/generate.mjs index=./templates/index.ts.js [templates]=./templates/[name].svelte.js,./templates/[name].svelte.d.ts.js",
 		"dev": "vite dev --open --host",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -48,6 +49,6 @@
 	"svelte": "./index.js",
 	"types": "./index.d.ts",
 	"publishConfig": {
-	  "directory": "package"
+		"directory": "package"
 	}
 }
