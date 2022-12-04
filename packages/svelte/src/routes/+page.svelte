@@ -1,9 +1,9 @@
 <script>
-	import { Facebook } from '$lib';
-	import { Twitter } from '$lib';
-	import { LinkedIn } from '$lib';
+	import AllLinks from './AllLinks.svelte';
 </script>
 
-<Facebook u="fghnbgty?./" title="" />
-<Twitter title="fgujnbnj" />
-<LinkedIn title="fgujnbnj" />
+<AllLinks size={48}/>
+<AllLinks borderRadius={0}/>
+<AllLinks/>
+<AllLinks round/>
+<AllLinks round color="black"/>

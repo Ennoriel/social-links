@@ -10,7 +10,7 @@
 	export let color: string | undefined = undefined;
 	export let iconFillColor = 'white';
 	export let bgStyle: string | undefined = undefined;
-	export let borderRadius: number | undefined = 12;
+	export let borderRadius: number | undefined = size * (6 / 32);
 	export let round: boolean | undefined = undefined;
 
 	export let target = '_blank';
@@ -23,6 +23,7 @@
 	style:height="{size}px"
 	{target}
 	aria-label={`Share to ${config.name}`}
+	style:border-radius="{round ? size / 2 : borderRadius}px"
 	{...$$restProps}
 >
 	<Icon {...config} {size} color={_color} {iconFillColor} {bgStyle} {borderRadius} {round} />

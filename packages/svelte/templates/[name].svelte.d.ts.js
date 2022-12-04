@@ -1,3 +1,7 @@
+const formatType = ({ key, type, optional }) => {
+	return `${key}${optional ? "?" : ""}: ${type}${optional ? " | undefined" : ""};`
+}
+
 export default ({ args }) => `
 import { SvelteComponentTyped } from 'svelte';
 import type { StylingProps } from '$lib/types.js';
@@ -5,7 +9,7 @@ import type { StylingProps } from '$lib/types.js';
 declare const __propDef: {
 	props: Partial<svelte.JSX.HTMLAttributes<HTMLElementTagNameMap['a']>> &
 		StylingProps & {
-			${args.map(({ key, type }) => `${key}: ${type};`).join('\n\t\t\t')}
+			${args.map(formatType).join('\n\t\t\t')}
 		};
 	events: void;
 	slots: void;

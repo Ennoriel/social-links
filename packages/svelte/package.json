@@ -1,6 +1,6 @@
 {
 	"name": "svelte-link-share",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A Share link component library",
 	"homepage": "https://ennoriel.github.io/Ennoriel/link-share",
 	"repository": {

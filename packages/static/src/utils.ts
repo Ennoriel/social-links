@@ -1,9 +1,12 @@
 export function getUrl(url: string, params?: Record<string, string | undefined>) {
-	const u = new URL(url);
+	let _url = url;
 	if (params) {
-		Object.entries(params)
+		_url += "?" + Object.entries(params)
 			.filter((param): param is [string, string] => !!param[1])
-			.forEach((param) => u.searchParams.append(...param));
+			// converting with encodeURIComponent (space will be transformed as %20 instead of + with searchParams)
+			.map(([k, v]) => [k, encodeURIComponent(v)] as [string, string])
+			.map(([k, v]) => `${k}=${v}`)
+			.join("&")
 	}
-	return u.toString();
+	return _url;
 }
