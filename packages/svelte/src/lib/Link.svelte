@@ -8,25 +8,25 @@
 
 	export let size = 32;
 	export let color: string | undefined = undefined;
-	export let iconFillColor = 'white';
-	export let bgStyle: string | undefined = undefined;
+	export let iconColor = 'white';
 	export let borderRadius: number | undefined = size * (6 / 32);
 	export let round: boolean | undefined = undefined;
 
 	export let target = '_blank';
 
 	$: _color = color || config.color;
+	$: _iconColor = iconColor === "brand" ? config.color : iconColor;
 </script>
 
 <a
 	href={getUrl(config.url, params)}
-	style:height="{size}px"
+	style:height={`${size}px`}
 	{target}
 	aria-label={`Share to ${config.name}`}
 	style:border-radius="{round ? size / 2 : borderRadius}px"
 	{...$$restProps}
 >
-	<Icon {...config} {size} color={_color} {iconFillColor} {bgStyle} {borderRadius} {round} />
+	<Icon {...config} {size} color={_color} iconColor={_iconColor} {borderRadius} {round} />
 </a>
 
 <style>

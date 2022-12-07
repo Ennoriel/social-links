@@ -17,8 +17,7 @@ export default ({ name, args }) => `
 
 	export let size: number | undefined = undefined;
 	export let color: string | undefined = undefined;
-	export let iconFillColor = 'white';
-	export let bgStyle: string | undefined = undefined;
+	export let iconColor = 'white';
 	export let borderRadius: number | undefined = undefined;
 	export let round: boolean | undefined = undefined;
 </script>
@@ -28,8 +27,7 @@ export default ({ name, args }) => `
 	{config}
 	{size}
 	{color}
-	{iconFillColor}
-	{bgStyle}
+	{iconColor}
 	{borderRadius}
 	{round}
 	{...$$restProps}

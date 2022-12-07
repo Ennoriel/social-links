@@ -10,5 +10,11 @@
 	<Twitter title="fgujnbnj #lul" hashtags={["lol", "lil"]} via="via" related="twitter:Twitter News,twitterapi:Twitter API News" in_reply_to="1599261195470372866" {...$$restProps} />
 </div>
 
-
+<style>
+	div {
+		display: flex;
+		gap: 8px;
+		margin: 8px;
+	}
+</style>
 <!-- fgujnbnj #lul http://localhost:5173/ #lol #lil via @via -->
