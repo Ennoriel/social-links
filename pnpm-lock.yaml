@@ -4,9 +4,13 @@ importers:
 
   .:
     specifiers:
+      '@changesets/changelog-github': ^0.4.7
+      '@changesets/cli': ^2.24.3
       prettier: ^2.8.1
       prettier-plugin-svelte: ^2.7.0
     devDependencies:
+      '@changesets/changelog-github': 0.4.7
+      '@changesets/cli': 2.25.2
       prettier: 2.8.1
       prettier-plugin-svelte: 2.8.1_prettier@2.8.1
 
@@ -476,7 +480,7 @@ packages:
       fs-extra: 7.0.1
       lodash.startcase: 4.4.0
       outdent: 0.5.0
-      prettier: 2.8.0
+      prettier: 2.8.1
       resolve-from: 5.0.0
       semver: 5.7.1
     dev: true
@@ -496,6 +500,16 @@ packages:
     resolution: {integrity: sha512-zvJ50Q+EUALzeawAxax6nF2WIcSsC5PwbuLeWkckS8ulWnuPYx8Fn/Sjd3rF46OzeKA8t30loYYV6TIzp4DIdg==}
     dependencies:
       '@changesets/types': 5.2.0
+    dev: true
+
+  /@changesets/changelog-github/0.4.7:
+    resolution: {integrity: sha512-UUG5sKwShs5ha1GFnayUpZNcDGWoY7F5XxhOEHS62sDPOtoHQZsG3j1nC5RxZ3M1URHA321cwVZHeXgu99Y3ew==}
+    dependencies:
+      '@changesets/get-github-info': 0.5.1
+      '@changesets/types': 5.2.0
+      dotenv: 8.6.0
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@changesets/cli/2.25.2:
@@ -563,6 +577,15 @@ packages:
       chalk: 2.4.2
       fs-extra: 7.0.1
       semver: 5.7.1
+    dev: true
+
+  /@changesets/get-github-info/0.5.1:
+    resolution: {integrity: sha512-w2yl3AuG+hFuEEmT6j1zDlg7GQLM/J2UxTmk0uJBMdRqHni4zXGe/vUlPfLom5KfX3cRfHc0hzGvloDPjWFNZw==}
+    dependencies:
+      dataloader: 1.4.0
+      node-fetch: 2.6.7
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@changesets/get-release-plan/3.0.15:
@@ -643,7 +666,7 @@ packages:
       '@changesets/types': 5.2.0
       fs-extra: 7.0.1
       human-id: 1.0.2
-      prettier: 2.8.0
+      prettier: 2.8.1
     dev: true
 
   /@esbuild/android-arm/0.15.16:
@@ -2062,6 +2085,10 @@ packages:
       whatwg-url: 11.0.0
     dev: true
 
+  /dataloader/1.4.0:
+    resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
+    dev: true
+
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
     engines: {node: '>=6.0'}
@@ -2174,6 +2201,11 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       webidl-conversions: 7.0.0
+    dev: true
+
+  /dotenv/8.6.0:
+    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
+    engines: {node: '>=10'}
     dev: true
 
   /electron-to-chromium/1.4.284:
@@ -4587,12 +4619,6 @@ packages:
       svelte: ^3.2.0
     dependencies:
       prettier: 2.8.1
-    dev: true
-
-  /prettier/2.8.0:
-    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
     dev: true
 
   /prettier/2.8.1:
