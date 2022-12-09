@@ -11,7 +11,6 @@
 		"package": "pnpm build",
 		"changeset": "changeset",
 		"lint": "eslint --ignore-path .gitignore .",
-		"prettier": "prettier --write --plugin-search-dir=. .",
 		"test": "jest"
 	},
 	"repository": {
@@ -38,7 +37,6 @@
 		"eslint-config-prettier": "^8.5.0",
 		"jest": "^28.1.2",
 		"jest-environment-jsdom": "^29.0.1",
-		"prettier": "^2.7.1",
 		"rollup": "^2.75.7",
 		"rollup-plugin-dts": "^4.2.2",
 		"ts-jest": "^28.0.5",

@@ -9,7 +9,7 @@
 
 # sharly
 
-Sharly is 
+Sharly is
 
 ## Introduction
 
@@ -18,14 +18,14 @@ Sharly is
 There are already countless ones:
 
 - vanilla JS components:
-	- [sharingbuttons.io](https://github.com/mxstbr/sharingbuttons.io)
-	- [sharer.js](https://github.com/ellisonleao/sharer.js)
-- react components: 
-	- [next-share](https://github.com/Bunlong/next-share)
-	- [react-share](https://github.com/nygardk/react-share)
+  - [sharingbuttons.io](https://github.com/mxstbr/sharingbuttons.io)
+  - [sharer.js](https://github.com/ellisonleao/sharer.js)
+- react components:
+  - [next-share](https://github.com/Bunlong/next-share)
+  - [react-share](https://github.com/nygardk/react-share)
 - svelte components:
-	- [sveltekit-share-buttons](https://github.com/rodneylab/sveltekit-share-buttons)
-	- [svelte-share-buttons-component](https://github.com/pchynoweth/svelte-share-buttons-component)
+  - [sveltekit-share-buttons](https://github.com/rodneylab/sveltekit-share-buttons)
+  - [svelte-share-buttons-component](https://github.com/pchynoweth/svelte-share-buttons-component)
 
 What they lack:
 
@@ -40,8 +40,8 @@ What they lack:
 - mono-repo for many frameworks. If you need the components for another library, it's easy to add it
 - no tracking
 - a11y:
-	- links have aria-label
-	- `:focus` is up to you
+  - links have aria-label
+  - `:focus` is up to you
 - typescript
 
 ### The library features
@@ -51,5 +51,5 @@ What they lack:
 ## Props
 
 {#each componentList as component}
-	<SvelteComponent {...component}/>
+<SvelteComponent {...component}/>
 {/each}

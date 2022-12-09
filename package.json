@@ -1,13 +1,17 @@
 {
-  "private": true,
-  "scripts": {
-    "all": "pnpm prepare && pnpm build && pnpm package",
-    "dev": "pnpm --filter site-share-link dev",
-    "build": "pnpm -r build",
-    "package": "pnpm -r package",
-    "prepare": "pnpm -r prepare",
-    "ci:publish": "pnpm -r publish",
-    "lint": "pnpm -r lint",
-    "prettier": "pnpm -r prettier"
-  }
+	"private": true,
+	"scripts": {
+		"all": "pnpm prepare && pnpm build && pnpm package",
+		"dev": "pnpm --filter site-share-link dev",
+		"build": "pnpm -r build",
+		"package": "pnpm -r package",
+		"prepare": "pnpm -r prepare",
+		"ci:publish": "pnpm -r publish",
+		"lint": "pnpm -r lint",
+		"prettier": "pnpm -r prettier"
+	},
+	"devDependencies": {
+		"prettier": "^2.8.1",
+		"prettier-plugin-svelte": "^2.7.0"
+	}
 }
