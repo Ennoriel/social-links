@@ -8,9 +8,7 @@
 		"prepare": "pnpm -r prepare",
 		"ci:publish": "pnpm -r publish",
 		"lint": "pnpm -r lint",
-		"prettier": "prettier --write ./**/* --no-error-on-unmatched-pattern --ignore-unknown",
-		"changeset:version": "changeset version",
-		"release": "pnpm all && changeset publish"
+		"prettier": "prettier --write ./**/* --no-error-on-unmatched-pattern --ignore-unknown"
 	},
 	"devDependencies": {
 		"@changesets/changelog-github": "^0.4.7",

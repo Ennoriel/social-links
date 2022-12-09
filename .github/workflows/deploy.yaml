@@ -27,14 +27,13 @@ jobs:
           EOF
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Install packages
-        run: pnpm install --frozen-lockfile -r
+      - name: Install & Build packages
+        run: |
+          pnpm install --frozen-lockfile -r
+          pnpm all
       - name: Publish to npm
         id: changesets
-        uses: changesets/action@master
-        with:
-          version: pnpm changeset:version
-          publish: pnpm release
+        uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
