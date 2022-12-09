@@ -12,6 +12,7 @@
 	export let borderRadius: number | undefined = size * (6 / 32);
 	export let round: boolean | undefined = undefined;
 
+	export let rel = 'noreferrer noopener';
 	export let target = '_blank';
 
 	$: _color = color || config.color;
@@ -21,6 +22,7 @@
 <a
 	href={getUrl(config.url, params)}
 	style:height={`${size}px`}
+	{rel}
 	{target}
 	aria-label={`Share to ${config.name}`}
 	style:border-radius="{round ? size / 2 : borderRadius}px"

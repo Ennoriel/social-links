@@ -1,32 +1,9 @@
-import preprocess from 'svelte-preprocess';
-import { mdsvex } from 'mdsvex';
-import rehypeSlug from 'rehype-slug';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import vercel from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-auto';
 
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [
-		preprocess(),
-		mdsvex({
-			extensions: ['.md'],
-			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
-		})
-	],
-
-	extensions: ['.svelte', '.md'],
-
 	kit: {
-		adapter: vercel()
-	},
-
-	vitePlugin: {
-		experimental: {
-			inspector: {
-				holdMode: true,
-				showToggleButton: 'always',
-				toggleButtonPos: 'bottom-right'
-			}
-		}
+		adapter: adapter()
 	}
 };
 

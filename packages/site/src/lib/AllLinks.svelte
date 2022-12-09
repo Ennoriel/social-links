@@ -1,5 +1,5 @@
 <script>
-	import { Facebook, HackerNews, LinkedIn, Reddit, Twitter } from '$lib';
+	import { Facebook, HackerNews, LinkedIn, Reddit, Twitter } from 'svelte-link-share';
 </script>
 
 <div>
@@ -17,4 +17,3 @@
 		margin: 8px;
 	}
 </style>
-<!-- fgujnbnj #lul http://localhost:5173/ #lol #lil via @via -->

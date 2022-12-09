@@ -1,8 +1,8 @@
-const formatType = ({ key, type, optional }) => {
-	return `${key}${optional ? "?" : ""}: ${type}${optional ? " | undefined" : ""};`
+const formatType = ({ key, propsName, type, optional }) => {
+	return `${propsName ?? key}${optional ? "?" : ""}: ${type}${optional ? " | undefined" : ""};`
 }
 
-export default ({ args }) => `
+export default ({app: { args }}) => `
 import { SvelteComponentTyped } from 'svelte';
 import type { StylingProps } from '$lib/types.js';
 

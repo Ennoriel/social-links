@@ -10,7 +10,7 @@
 	"author": "Maxime Dupont <m.dupont103@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"prepare": "node ../../scripts/generate.mjs index=./templates/index.ts.js [templates]=./templates/[name].svelte.js,./templates/[name].svelte.d.ts.js",
+		"prepare": "node ../../scripts/generate.mjs",
 		"dev": "vite dev --open --host",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -21,7 +21,6 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-vercel": "1.0.0-next.84",
 		"@sveltejs/kit": "next",
 		"@sveltejs/package": "next",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
@@ -29,11 +28,8 @@
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"mdsvex": "^0.10.6",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
-		"rehype-autolink-headings": "^6.1.1",
-		"rehype-slug": "^5.1.0",
 		"sharer.js": "^0.5.1",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.7.1",

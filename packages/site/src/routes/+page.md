@@ -1,11 +1,15 @@
 <script>
-	import AllLinks from './components/AllLinks.svelte';
+	import AllLinks from '$lib/AllLinks.svelte';
+	import EasyDesignConfiguration from './EasyDesignConfiguration.svelte';
+	import SvelteComponent from '$lib/SvelteComponent.svelte';
+	
 	import componentList from '../../../static/src/generateConfig.mjs';
-	import SvelteComponent from './SvelteComponent.svelte';
-	import EasyDesignConfiguration from './components/EasyDesignConfiguration.svelte';
-	import './style.css';
 
 </script>
+
+# sharly
+
+Sharly is 
 
 ## Introduction
 

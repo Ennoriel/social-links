@@ -1,33 +1,33 @@
 import config from '../packages/static/src/generateConfig.mjs';
 import path from 'path';
+import fs from 'fs';
 import { appendFile, getFilename, makeDir, parseArgs, resetFile } from './helpers.mjs';
 
-const { index, templates } = parseArgs();
+
+const templateDir = './templates';
+const templates = fs.readdirSync(templateDir)
+// const index =  "index.ts.js";
 const dist = './src/lib/icons';
 
-if (!index) {
-    throw '---> Missing index arg'
-}
+console.log(templates)
 
-if (!templates?.length) {
-    throw '---> Missing templates arg'
-}
-
-const templateFiles = templates.map(template => import("file://" + path.resolve(process.cwd(), template)))
+const templateFiles = templates.map(template => import("file://" + path.resolve(process.cwd(), templateDir, template)))
 const generators = await Promise.all(templateFiles).then(res => res.map((v, i) => ({ filename: getFilename(templates[i]), m: v.default })))
-const indexGenerator = await import("file://" + path.resolve(process.cwd(), index))
+console.log(JSON.stringify({l: config.length, config}))
 
 config.forEach(app => {
     generators.forEach(generator => {
-        const folderPath = path.resolve(process.cwd(), dist, app.name.toLocaleLowerCase());
+        const folderPath = path.resolve(process.cwd(), dist);
         const filePath = path.resolve(folderPath, generator.filename.replace(/\[name\]/g, app.name));
-        makeDir(folderPath);
         resetFile(filePath);
-        appendFile(filePath, generator.m(app));
+        appendFile(filePath, generator.m({app, config}));
     })
 })
 
-const folderPath = path.resolve(process.cwd(), dist);
-const filePath = path.resolve(folderPath, getFilename(index));
-resetFile(filePath);
-appendFile(filePath, indexGenerator.default(config))
+// if (templates.findIndex(t => t === index) >= 0) {
+//     const indexGenerator = await import("file://" + path.resolve(process.cwd(), templateDir, index))
+//     const folderPath = path.resolve(process.cwd(), dist);
+//     const filePath = path.resolve(folderPath, getFilename(index));
+//     resetFile(filePath);
+//     appendFile(filePath, indexGenerator.default(config))
+// }

@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "all": "pnpm prepare && pnpm build && pnpm package",
-    "dev": "pnpm --filter svelte-link-share dev",
+    "dev": "pnpm --filter site-share-link dev",
     "build": "pnpm -r build",
     "package": "pnpm -r package",
     "prepare": "pnpm -r prepare",

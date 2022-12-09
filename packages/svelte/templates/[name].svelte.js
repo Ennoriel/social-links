@@ -1,12 +1,12 @@
-const formatExport = ({ key, type, optional }) => {
-	return `export let ${key}: ${type}${optional ? " | undefined" : ""}${optional ? " = undefined" : ""};`
+const formatExport = ({ key, propsName = key, type, optional }) => {
+	return `export let ${propsName}: ${type}${optional ? " | undefined" : ""}${optional ? " = undefined" : ""};`
 }
 
-const formatValue = ({ key, type, prefix }) => {
-	return `$: _${key} = ${type.startsWith('Array') ? `${key}?.map?.(k => \`${prefix || ""}\${k}\`)?.join(',')` :  key};`
+const formatValue = ({ key, propsName = key, type, prefix = "" }) => {
+	return `$: _${key} = ${type.startsWith('Array') ? `${propsName}?.map?.(k => \`${prefix}\${k}\`)?.join(',')` : prefix ? `\`${prefix}$\{${propsName}}\`` : propsName};`
 }
 
-export default ({ name, args }) => `
+export default ({app: { name, args }}) => `
 <script lang="ts">
 	import Link from '$lib/Link.svelte';
 	import { ${name.toLocaleLowerCase()} as config } from 'static-link-share';

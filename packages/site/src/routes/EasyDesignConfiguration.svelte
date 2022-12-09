@@ -1,6 +1,5 @@
 <script>
-
-	import AllLinks from './AllLinks.svelte';
+	import AllLinks from '$lib/AllLinks.svelte';
 
 	let config = {
 		size: 32,

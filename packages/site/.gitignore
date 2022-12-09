@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+/src/lib/icons/*
+!/src/lib/icons/.gitkeep
+!/src/lib/icons/README.md
