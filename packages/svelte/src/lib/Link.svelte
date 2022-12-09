@@ -16,7 +16,7 @@
 	export let target = '_blank';
 
 	$: _color = color || config.color;
-	$: _iconColor = iconColor === "brand" ? config.color : iconColor;
+	$: _iconColor = iconColor === 'brand' ? config.color : iconColor;
 </script>
 
 <a

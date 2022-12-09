@@ -7,7 +7,14 @@
 	export let round: boolean | undefined = undefined;
 </script>
 
-<svg viewBox="0 0 64 64" width={size} height={size} style:border-radius="{borderRadius}px" role="img" aria-label="">
+<svg
+	viewBox="0 0 64 64"
+	width={size}
+	height={size}
+	style:border-radius="{borderRadius}px"
+	role="img"
+	aria-label=""
+>
 	{#if round}
 		<circle cx="32" cy="32" r="32" fill={color} />
 	{:else}

@@ -8,7 +8,7 @@
 		"prepare": "pnpm -r prepare",
 		"ci:publish": "pnpm -r publish",
 		"lint": "pnpm -r lint",
-		"prettier": "pnpm -r prettier"
+		"prettier": "prettier --write ./**/* --no-error-on-unmatched-pattern --ignore-unknown"
 	},
 	"devDependencies": {
 		"prettier": "^2.8.1",

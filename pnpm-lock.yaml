@@ -12,7 +12,6 @@ importers:
 
   packages/site:
     specifiers:
-      '@playwright/test': ^1.25.0
       '@sveltejs/adapter-vercel': 1.0.0-next.84
       '@sveltejs/kit': next
       '@sveltejs/package': next
@@ -22,8 +21,6 @@ importers:
       eslint-config-prettier: ^8.3.0
       eslint-plugin-svelte3: ^4.0.0
       mdsvex: ^0.10.6
-      prettier: ^2.6.2
-      prettier-plugin-svelte: ^2.7.0
       rehype-autolink-headings: ^6.1.1
       rehype-slug: ^5.1.0
       svelte: ^3.44.0
@@ -34,9 +31,8 @@ importers:
       typescript: ^4.7.4
       vite: ^3.0.0
     devDependencies:
-      '@playwright/test': 1.28.1
       '@sveltejs/adapter-vercel': 1.0.0-next.84
-      '@sveltejs/kit': 1.0.0-next.572_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/kit': 1.0.0-next.577_svelte@3.53.1+vite@3.2.4
       '@sveltejs/package': 1.0.0-next.1_7dvewpees4iyn2tkw2qzal77a4
       '@typescript-eslint/eslint-plugin': 5.45.0_yjegg5cyoezm3fzsmuszzhetym
       '@typescript-eslint/parser': 5.45.0_s5ps7njkmjlaqajutnox5ntcla
@@ -44,8 +40,6 @@ importers:
       eslint-config-prettier: 8.5.0_eslint@8.29.0
       eslint-plugin-svelte3: 4.0.0_kzv3boqmfymw5ol254gxmp75rq
       mdsvex: 0.10.6_svelte@3.53.1
-      prettier: 2.8.0
-      prettier-plugin-svelte: 2.8.1_3ndnxlh52lolrqe4kgjgbxb3xa
       rehype-autolink-headings: 6.1.1
       rehype-slug: 5.1.0
       svelte: 3.53.1
@@ -69,7 +63,6 @@ importers:
       form-data-to-object: ^0.2.0
       jest: ^28.1.2
       jest-environment-jsdom: ^29.0.1
-      prettier: ^2.7.1
       rollup: ^2.75.7
       rollup-plugin-dts: ^4.2.2
       ts-jest: ^28.0.5
@@ -88,7 +81,6 @@ importers:
       eslint-config-prettier: 8.5.0_eslint@8.29.0
       jest: 28.1.3
       jest-environment-jsdom: 29.3.1
-      prettier: 2.8.0
       rollup: 2.79.1
       rollup-plugin-dts: 4.2.3_k35zwyycrckt5xfsejji7kbwn4
       ts-jest: 28.0.8_l4uz7kl2eeclic7mumfbeqbwgi
@@ -98,7 +90,6 @@ importers:
   packages/svelte:
     specifiers:
       '@sveltejs/adapter-auto': next
-      '@sveltejs/adapter-vercel': 1.0.0-next.84
       '@sveltejs/kit': next
       '@sveltejs/package': next
       '@typescript-eslint/eslint-plugin': ^5.27.0
@@ -106,11 +97,6 @@ importers:
       eslint: ^8.16.0
       eslint-config-prettier: ^8.3.0
       eslint-plugin-svelte3: ^4.0.0
-      mdsvex: ^0.10.6
-      prettier: ^2.7.1
-      prettier-plugin-svelte: ^2.7.0
-      rehype-autolink-headings: ^6.1.1
-      rehype-slug: ^5.1.0
       sharer.js: ^0.5.1
       static-link-share: workspace:*
       svelte: ^3.44.0
@@ -123,19 +109,13 @@ importers:
       static-link-share: link:../static
     devDependencies:
       '@sveltejs/adapter-auto': 1.0.0-next.90
-      '@sveltejs/adapter-vercel': 1.0.0-next.84
-      '@sveltejs/kit': 1.0.0-next.572_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/kit': 1.0.0-next.577_svelte@3.53.1+vite@3.2.4
       '@sveltejs/package': 1.0.0-next.1_7dvewpees4iyn2tkw2qzal77a4
       '@typescript-eslint/eslint-plugin': 5.45.0_yjegg5cyoezm3fzsmuszzhetym
       '@typescript-eslint/parser': 5.45.0_s5ps7njkmjlaqajutnox5ntcla
       eslint: 8.29.0
       eslint-config-prettier: 8.5.0_eslint@8.29.0
       eslint-plugin-svelte3: 4.0.0_kzv3boqmfymw5ol254gxmp75rq
-      mdsvex: 0.10.6_svelte@3.53.1
-      prettier: 2.8.0
-      prettier-plugin-svelte: 2.8.1_3ndnxlh52lolrqe4kgjgbxb3xa
-      rehype-autolink-headings: 6.1.1
-      rehype-slug: 5.1.0
       sharer.js: 0.5.1
       svelte: 3.53.1
       svelte-check: 2.10.0_svelte@3.53.1
@@ -1089,15 +1069,6 @@ packages:
       fastq: 1.14.0
     dev: true
 
-  /@playwright/test/1.28.1:
-    resolution: {integrity: sha512-xN6spdqrNlwSn9KabIhqfZR7IWjPpFK1835tFNgjrlysaSezuX8PYUwaz38V/yI8TJLG9PkAMEXoHRXYXlpTPQ==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dependencies:
-      '@types/node': 18.11.10
-      playwright-core: 1.28.1
-    dev: true
-
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
@@ -1180,8 +1151,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.572_svelte@3.53.1+vite@3.2.4:
-    resolution: {integrity: sha512-PiKEr55L/uJyMKvDPdyoa5MlAYQwdgs8HLMbr28YcCBmhw/v6V7gutKOKdqeXc3YwKEFVS3z7TvW6c7eDokJdQ==}
+  /@sveltejs/kit/1.0.0-next.577_svelte@3.53.1+vite@3.2.4:
+    resolution: {integrity: sha512-hQuSGiF87pNNdmIMDwOr8+nMOe/tgtOne4VBpCFb4k0YrFh/5qC/pgWvWXFWeJBRi9/UzmEjGH9gJeJkgtMLmw==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
@@ -1201,7 +1172,7 @@ packages:
       sirv: 2.0.2
       svelte: 3.53.1
       tiny-glob: 0.2.9
-      undici: 5.13.0
+      undici: 5.14.0
       vite: 3.2.4
     transitivePeerDependencies:
       - supports-color
@@ -4580,12 +4551,6 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /playwright-core/1.28.1:
-    resolution: {integrity: sha512-3PixLnGPno0E8rSBJjtwqTwJe3Yw72QwBBBxNoukIj3lEeBNXwbNiKrNuB1oyQgTBw5QHUhNO3SteEtHaMK6ag==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
-
   /postcss/8.4.19:
     resolution: {integrity: sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA==}
     engines: {node: ^10 || ^12 || >=14}
@@ -4613,16 +4578,6 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
-    dev: true
-
-  /prettier-plugin-svelte/2.8.1_3ndnxlh52lolrqe4kgjgbxb3xa:
-    resolution: {integrity: sha512-KA3K1J3/wKDnCxW7ZDRA/QL2Q67N7Xs3gOERqJ5X1qFjq1DdnN3K1R29scSKwh+kA8FF67pXbYytUpvN/i3iQw==}
-    peerDependencies:
-      prettier: ^1.16.4 || ^2.0.0
-      svelte: ^3.2.0
-    dependencies:
-      prettier: 2.8.0
-      svelte: 3.53.1
     dev: true
 
   /prettier-plugin-svelte/2.8.1_prettier@2.8.1:
@@ -5566,8 +5521,8 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
-  /undici/5.13.0:
-    resolution: {integrity: sha512-UDZKtwb2k7KRsK4SdXWG7ErXiL7yTGgLWvk2AXO1JMjgjh404nFo6tWSCM2xMpJwMPx3J8i/vfqEh1zOqvj82Q==}
+  /undici/5.14.0:
+    resolution: {integrity: sha512-yJlHYw6yXPPsuOH0x2Ib1Km61vu4hLiRRQoafs+WUgX1vO64vgnxiCEN9dpIrhZyHFsai3F0AEj4P9zy19enEQ==}
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
