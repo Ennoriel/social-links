@@ -10,7 +10,7 @@
 		"lint": "pnpm -r lint",
 		"prettier": "prettier --write ./**/* --no-error-on-unmatched-pattern --ignore-unknown",
 		"changeset:version": "changeset version",
-		"release": "pnpm i --lockfile-only && pnpm all && changeset publish"
+		"release": "pnpm all && changeset publish"
 	},
 	"devDependencies": {
 		"@changesets/changelog-github": "^0.4.7",

@@ -27,7 +27,7 @@ jobs:
           EOF
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name Install packages
+      - name: Install packages
         run: pnpm install --frozen-lockfile -r
       - name: Publish to npm
         id: changesets
