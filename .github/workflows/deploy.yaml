@@ -10,28 +10,33 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.2
+      - name: 🔨 Clone repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 🔨 Set up pnpm
+        uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
-      - uses: actions/setup-node@v3
+      - name: 🔨 Set up node
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
           cache-dependency-path: '**/pnpm-lock.yaml'
-      - name: Creating .npmrc
+      - name: 🔨 Creating .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
             //registry.npmjs.org/:_authToken=$NPM_TOKEN
           EOF
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Install & Build packages
+      - name: 🔨 Install & Build packages
         run: |
           pnpm install --frozen-lockfile -r
           pnpm all
-      - name: Publish to npm
+      - name: 🔨 Publish to npm
         id: changesets
         uses: changesets/action@v1
         env:
