@@ -45,5 +45,6 @@
 	},
 	"dependencies": {
 		"form-data-to-object": "^0.2.0"
-	}
+	},
+	"type": "module"
 }
