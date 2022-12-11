@@ -23,7 +23,7 @@
 		"rehype-slug": "^5.1.0",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.7.1",
-		"svelte-link-share": "link:..\\svelte\\package",
+		"svelte-link-share": "workspace:*",
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",

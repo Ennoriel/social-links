@@ -29,14 +29,14 @@ importers:
       rehype-slug: ^5.1.0
       svelte: ^3.44.0
       svelte-check: ^2.7.1
-      svelte-link-share: link:..\svelte\package
+      svelte-link-share: workspace:*
       svelte-preprocess: ^4.10.6
       tslib: ^2.3.1
       typescript: ^4.7.4
       vite: ^3.0.0
     devDependencies:
       '@sveltejs/adapter-vercel': 1.0.0-next.84
-      '@sveltejs/kit': 1.0.0-next.577_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/kit': 1.0.0-next.582_svelte@3.53.1+vite@3.2.4
       '@sveltejs/package': 1.0.0-next.1_7dvewpees4iyn2tkw2qzal77a4
       '@typescript-eslint/eslint-plugin': 5.45.0_yjegg5cyoezm3fzsmuszzhetym
       '@typescript-eslint/parser': 5.45.0_s5ps7njkmjlaqajutnox5ntcla
@@ -48,7 +48,7 @@ importers:
       rehype-slug: 5.1.0
       svelte: 3.53.1
       svelte-check: 2.10.0_svelte@3.53.1
-      svelte-link-share: link:../svelte/package
+      svelte-link-share: link:../svelte
       svelte-preprocess: 4.10.7_7dvewpees4iyn2tkw2qzal77a4
       tslib: 2.4.1
       typescript: 4.9.3
@@ -113,7 +113,7 @@ importers:
       static-link-share: link:../static
     devDependencies:
       '@sveltejs/adapter-auto': 1.0.0-next.90
-      '@sveltejs/kit': 1.0.0-next.577_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/kit': 1.0.0-next.582_svelte@3.53.1+vite@3.2.4
       '@sveltejs/package': 1.0.0-next.1_7dvewpees4iyn2tkw2qzal77a4
       '@typescript-eslint/eslint-plugin': 5.45.0_yjegg5cyoezm3fzsmuszzhetym
       '@typescript-eslint/parser': 5.45.0_s5ps7njkmjlaqajutnox5ntcla
@@ -1174,19 +1174,20 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.577_svelte@3.53.1+vite@3.2.4:
-    resolution: {integrity: sha512-hQuSGiF87pNNdmIMDwOr8+nMOe/tgtOne4VBpCFb4k0YrFh/5qC/pgWvWXFWeJBRi9/UzmEjGH9gJeJkgtMLmw==}
+  /@sveltejs/kit/1.0.0-next.582_svelte@3.53.1+vite@3.2.4:
+    resolution: {integrity: sha512-Mt/1QcIHiHxrBLH4iV+pgVXDWOvQKX9iDEUwswRfkt6x72HR1FDeVRKFXS5PBFPGRFLejifGJRN383co7xzumA==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
     peerDependencies:
-      svelte: ^3.44.0
-      vite: ^3.2.0
+      svelte: ^3.54.0
+      vite: ^4.0.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.4.0_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/vite-plugin-svelte': 2.0.1_svelte@3.53.1+vite@3.2.4
       '@types/cookie': 0.5.1
       cookie: 0.5.0
       devalue: 4.2.0
+      esm-env: 1.0.0
       kleur: 4.1.5
       magic-string: 0.27.0
       mime: 3.0.0
@@ -1217,21 +1218,21 @@ packages:
       - typescript
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.4.0_svelte@3.53.1+vite@3.2.4:
-    resolution: {integrity: sha512-6QupI/jemMfK+yI2pMtJcu5iO2gtgTfcBdGwMZZt+lgbFELhszbDl6Qjh000HgAV8+XUA+8EY8DusOFk8WhOIg==}
+  /@sveltejs/vite-plugin-svelte/2.0.1_svelte@3.53.1+vite@3.2.4:
+    resolution: {integrity: sha512-NA0dPOmd/i8yb0xG4fWu++Y1NJR+j2pWFplQKDxTVEFZ8uipJpSsSX0ZwkkjwJQJ1jMyXgmxKKZJsCM7Chx/Yw==}
     engines: {node: ^14.18.0 || >= 16}
     peerDependencies:
-      svelte: ^3.44.0
-      vite: ^3.0.0
+      svelte: ^3.54.0
+      vite: ^4.0.0
     dependencies:
       debug: 4.3.4
       deepmerge: 4.2.2
       kleur: 4.1.5
-      magic-string: 0.26.7
+      magic-string: 0.27.0
       svelte: 3.53.1
       svelte-hmr: 0.15.1_svelte@3.53.1
       vite: 3.2.4
-      vitefu: 0.2.2_vite@3.2.4
+      vitefu: 0.2.3_vite@3.2.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2632,6 +2633,10 @@ packages:
       text-table: 0.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /esm-env/1.0.0:
+    resolution: {integrity: sha512-Cf6VksWPsTuW01vU9Mk/3vRue91Zevka5SjyNf3nEpokFRuqt/KjUQoGAwq9qMmhpLTHmXzSIrFRw8zxWzmFBA==}
     dev: true
 
   /espree/9.4.1:
@@ -5707,10 +5712,10 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitefu/0.2.2_vite@3.2.4:
-    resolution: {integrity: sha512-8CKEIWPm4B4DUDN+h+hVJa9pyNi7rzc5MYmbxhs1wcMakueGFNWB5/DL30USm9qU3xUPnL4/rrLEAwwFiD1tag==}
+  /vitefu/0.2.3_vite@3.2.4:
+    resolution: {integrity: sha512-75l7TTuU8isAhz1QFtNKjDkqjxvndfMC1AfIMjJ0ZQ59ZD0Ow9QOIsJJX16Wv9PS8f+zMzp6fHy5cCbKG/yVUQ==}
     peerDependencies:
-      vite: ^3.0.0
+      vite: ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
       vite:
         optional: true
