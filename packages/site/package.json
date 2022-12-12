@@ -2,6 +2,7 @@
 	"name": "site-share-link",
 	"version": "0.0.1",
 	"scripts": {
+		"vercel:prepare": "pnpm -r prepare && pnpm -r package",
 		"prepare": "node ../../scripts/generate.mjs",
 		"dev": "vite dev",
 		"build": "vite build",
