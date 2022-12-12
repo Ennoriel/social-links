@@ -11,7 +11,7 @@
 	};
 </script>
 
-<h4>Easy design customization</h4>
+#### Easy design customization
 
 <label style:display="block">
 	<input type="checkbox" bind:checked={config.round} />

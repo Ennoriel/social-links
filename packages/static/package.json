@@ -1,6 +1,6 @@
 {
-	"name": "static-link-share",
-	"version": "0.0.2",
+	"name": "static-social-link",
+	"version": "0.0.6",
 	"description": "base utils for use in component libraries",
 	"main": "dist/cjs.js",
 	"module": "dist/esm.js",
@@ -45,6 +45,9 @@
 	},
 	"dependencies": {
 		"form-data-to-object": "^0.2.0"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"type": "module"
 }
