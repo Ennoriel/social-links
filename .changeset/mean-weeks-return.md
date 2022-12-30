@@ -1,6 +1,7 @@
 ---
 'site-social-link': patch
 'static-social-link': patch
+'svelte-social-link': patch
 ---
 
-First commit
+rename lib
