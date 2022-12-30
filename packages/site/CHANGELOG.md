@@ -1,5 +1,11 @@
 # site-social-link
 
+## 0.0.3
+
+### Patch Changes
+
+- [`c76b70a`](https://github.com/Ennoriel/social-links/commit/c76b70abe6569245e801d783e6ad14706e666b08) - bump
+
 ## 0.0.2
 
 ### Patch Changes
