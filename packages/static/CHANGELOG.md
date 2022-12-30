@@ -1,5 +1,11 @@
 # static-social-link
 
+## 0.0.4
+
+### Patch Changes
+
+- [`1ce058a`](https://github.com/Ennoriel/social-links/commit/1ce058a7a7bf91d00ff24d060650d50f918f58e6) - up
+
 ## 0.0.3
 
 ### Patch Changes
