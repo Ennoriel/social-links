@@ -1,5 +1,6 @@
 {
 	"private": true,
+	"version": "0",
 	"scripts": {
 		"all": "pnpm prepare && pnpm package && pnpm build",
 		"dev": "pnpm --filter site-share-link dev",
