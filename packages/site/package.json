@@ -1,5 +1,5 @@
 {
-	"name": "site-share-link",
+	"name": "site-social-link",
 	"version": "0.0.1",
 	"scripts": {
 		"vercel:prepare": "pnpm -r prepare && pnpm -r package",

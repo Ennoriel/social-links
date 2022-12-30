@@ -1,6 +1,6 @@
 ---
-'site-share-link': patch
-'static-link-share': patch
+'site-social-link': patch
+'static-social-link': patch
 ---
 
 First commit
