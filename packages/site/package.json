@@ -1,7 +1,7 @@
 {
 	"name": "site-social-link",
 	"private": "true",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"scripts": {
 		"vercel:prepare": "pnpm -r prepare && pnpm -r package",
 		"prepare": "node ../../scripts/generate.mjs",
@@ -25,7 +25,7 @@
 		"rehype-slug": "^5.1.0",
 		"svelte": "^3.54.0",
 		"svelte-check": "^2.10.2",
-		"svelte-social-link": "workspace:^0.0.5",
+		"svelte-social-link": "workspace:^0.0.6",
 		"svelte-preprocess": "^5.0.0",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.4",
