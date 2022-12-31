@@ -40,7 +40,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          version: ./update-lock.sh
+          version: ./.github/workflows/update-lock.sh
           publish: pnpm ci:publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
