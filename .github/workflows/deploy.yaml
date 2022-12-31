@@ -23,7 +23,6 @@ jobs:
           ls -alrt
           ls ./.github -alrt
           ls ./.github/workflows -alrt
-          ./.github/workflows/update-lock.sh
       - name: 🔨 Set up node
         uses: actions/setup-node@v3
         with:
