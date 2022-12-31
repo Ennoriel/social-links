@@ -36,6 +36,7 @@ jobs:
         run: |
           pnpm install --frozen-lockfile -r
           pnpm all
+          ls -alrt
       - name: 🔨 Publish to npm
         id: changesets
         uses: changesets/action@v1
