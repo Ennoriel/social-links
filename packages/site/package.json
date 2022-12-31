@@ -1,5 +1,6 @@
 {
 	"name": "site-social-link",
+	"private": "true",
 	"version": "0.0.4",
 	"scripts": {
 		"vercel:prepare": "pnpm -r prepare && pnpm -r package",
