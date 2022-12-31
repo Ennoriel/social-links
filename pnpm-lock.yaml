@@ -51,7 +51,7 @@ importers:
       rehype-slug: ^5.1.0
       svelte: ^3.54.0
       svelte-check: ^2.10.2
-      svelte-link-share: workspace:*
+      svelte-social-share: workspace:*
       svelte-preprocess: ^5.0.0
       tslib: ^2.4.1
       typescript: ^4.9.4
@@ -70,7 +70,7 @@ importers:
       rehype-slug: 5.1.0
       svelte: 3.54.0
       svelte-check: 2.10.2_svelte@3.54.0
-      svelte-link-share: link:../svelte
+      svelte-social-share: link:../svelte
       svelte-preprocess: 5.0.0_vjccw6zkwqrmxudvmy4reaayx4
       tslib: 2.4.1
       typescript: 4.9.4

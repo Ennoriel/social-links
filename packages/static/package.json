@@ -46,5 +46,8 @@
 	"dependencies": {
 		"form-data-to-object": "^0.2.0"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"type": "module"
 }

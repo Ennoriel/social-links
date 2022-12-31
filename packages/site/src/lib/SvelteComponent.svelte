@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as X from 'svelte-link-share';
+	import * as X from 'svelte-social-share';
 	import * as Y from './icons';
 	import { defaultValueForDoc } from '../../../static/src/generateConfig.mjs';
 

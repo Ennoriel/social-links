@@ -1,5 +1,5 @@
 <script>
-	import { Facebook, HackerNews, LinkedIn, Reddit, Twitter } from 'svelte-link-share';
+	import { Facebook, HackerNews, LinkedIn, Reddit, Twitter } from 'svelte-social-share';
 </script>
 
 <div>

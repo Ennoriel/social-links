@@ -45,6 +45,7 @@
 	"svelte": "./package/index.js",
 	"types": "./package/index.d.ts",
 	"publishConfig": {
+		"access": "public",
 		"directory": "package"
 	}
 }
