@@ -18,6 +18,12 @@ jobs:
         uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
+      - name: dir
+        run: |
+          ls -alrt
+          ls ./.github -alrt
+          ls ./.github/workflows -alrt
+          ./.github/workflows/update-lock.sh
       - name: 🔨 Set up node
         uses: actions/setup-node@v3
         with:
@@ -36,7 +42,6 @@ jobs:
         run: |
           pnpm install --frozen-lockfile -r
           pnpm all
-          ls -alrt
       - name: 🔨 Publish to npm
         id: changesets
         uses: changesets/action@v1
