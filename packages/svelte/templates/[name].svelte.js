@@ -17,7 +17,7 @@ const formatValue = ({ key, propsName = key, type, prefix = '' }) => {
 export default ({ app: { name, args } }) => `
 <script lang="ts">
 	import Link from '$lib/Link.svelte';
-	import { ${name.toLocaleLowerCase()} as config } from 'static-social-share';
+	import { ${name.toLocaleLowerCase()} as config } from 'static-social-link';
 
 	${args.map(formatExport).join('\n\t')}
 

@@ -35,7 +35,7 @@
 		"vite": "^4.0.0"
 	},
 	"dependencies": {
-		"static-social-share": "workspace:*"
+		"static-social-link": "workspace:^0.0.5"
 	},
 	"type": "module",
 	"keywords": [
