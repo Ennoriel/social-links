@@ -1,5 +1,59 @@
 # static-social-link
 
+## 0.0.17
+
+### Patch Changes
+
+- up
+
+## 0.0.16
+
+### Patch Changes
+
+- 16
+
+## 0.0.15
+
+### Patch Changes
+
+- 15
+
+## 0.0.14
+
+### Patch Changes
+
+- 14
+
+## 0.0.13
+
+### Patch Changes
+
+- 13
+
+## 0.0.12
+
+### Patch Changes
+
+- 12
+
+## 0.0.11
+
+### Patch Changes
+
+- up
+
+## 0.0.10
+
+### Patch Changes
+
+- test publishing one then two
+
+## 0.0.9
+
+### Patch Changes
+
+- up
+
 ## 0.0.7
 
 ### Patch Changes

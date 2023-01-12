@@ -1,6 +1,6 @@
 {
 	"name": "svelte-social-link",
-	"version": "0.0.7",
+	"version": "0.0.17",
 	"description": "A Share link component library",
 	"homepage": "https://ennoriel.github.io/Ennoriel/link-share",
 	"repository": {
@@ -19,33 +19,32 @@
 		"package": "svelte-kit sync && svelte-package"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "1.0.0-next.90",
-		"@sveltejs/kit": "1.0.0-next.582",
-		"@sveltejs/package": "1.0.0-next.6",
-		"@typescript-eslint/eslint-plugin": "^5.46.0",
-		"@typescript-eslint/parser": "^5.46.0",
-		"eslint": "^8.29.0",
+		"@sveltejs/adapter-auto": "^1.0.0",
+		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/package": "^1.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"svelte": "^3.54.0",
-		"svelte-check": "^2.10.2",
-		"svelte-preprocess": "^5.0.0",
+		"svelte-check": "^3.0.1",
 		"tslib": "^2.4.1",
-		"typescript": "^4.9.4",
+		"typescript": "^4.9.3",
 		"vite": "^4.0.0"
 	},
 	"dependencies": {
-		"static-social-link": "workspace:^0.0.7"
+		"static-social-link": "workspace:^0.0.17"
 	},
 	"type": "module",
 	"keywords": [
 		"svelte",
 		"link share"
 	],
-	"svelte": "./package/index.js",
 	"types": "./package/index.d.ts",
 	"publishConfig": {
 		"access": "public",
-		"directory": "package"
+		"directory": "package",
+		"types": "./index.d.ts"
 	}
 }

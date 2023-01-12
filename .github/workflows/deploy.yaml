@@ -37,15 +37,19 @@ jobs:
           EOF
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: 🔨 Install & Build packages
-        run: |
-          pnpm install --frozen-lockfile -r
-          pnpm all
+      - name: 🔨 Install
+        run: pnpm install --frozen-lockfile -r
+      - name: 🔨 Version
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          version: pnpm ci:version
+      - name: 🔨 Build packages
+        run: pnpm all
       - name: 🔨 Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
-          version: ./.github/workflows/update-lock.sh
           publish: pnpm ci:publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

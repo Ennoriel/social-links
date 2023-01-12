@@ -1,5 +1,86 @@
 # svelte-social-link
 
+## 0.0.17
+
+### Patch Changes
+
+- up
+
+- Updated dependencies []:
+  - static-social-link@0.0.17
+
+## 0.0.16
+
+### Patch Changes
+
+- 16
+
+- Updated dependencies []:
+  - static-social-link@0.0.16
+
+## 0.0.15
+
+### Patch Changes
+
+- 15
+
+- Updated dependencies []:
+  - static-social-link@0.0.15
+
+## 0.0.14
+
+### Patch Changes
+
+- 14
+
+- Updated dependencies []:
+  - static-social-link@0.0.14
+
+## 0.0.13
+
+### Patch Changes
+
+- 13
+
+- Updated dependencies []:
+  - static-social-link@0.0.13
+
+## 0.0.12
+
+### Patch Changes
+
+- 12
+
+- Updated dependencies []:
+  - static-social-link@0.0.12
+
+## 0.0.11
+
+### Patch Changes
+
+- up
+
+- Updated dependencies []:
+  - static-social-link@0.0.11
+
+## 0.0.10
+
+### Patch Changes
+
+- test publishing one then two
+
+- Updated dependencies []:
+  - static-social-link@0.0.10
+
+## 0.0.9
+
+### Patch Changes
+
+- up
+
+- Updated dependencies []:
+  - static-social-link@0.0.9
+
 ## 0.0.7
 
 ### Patch Changes

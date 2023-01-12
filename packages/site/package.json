@@ -1,7 +1,7 @@
 {
 	"name": "site-social-link",
 	"private": "true",
-	"version": "0.0.7",
+	"version": "0.0.17",
 	"scripts": {
 		"vercel:prepare": "pnpm -r prepare && pnpm -r package",
 		"prepare": "node ../../scripts/generate.mjs",
@@ -12,24 +12,24 @@
 		"lint": "eslint ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-vercel": "1.0.0-next.85",
-		"@sveltejs/kit": "1.0.0-next.582",
-		"@sveltejs/package": "1.0.0-next.6",
-		"@typescript-eslint/eslint-plugin": "^5.46.0",
-		"@typescript-eslint/parser": "^5.46.0",
-		"eslint": "^8.29.0",
-		"eslint-config-prettier": "^8.5.0",
+		"@sveltejs/adapter-vercel": "1.0.1",
+		"@sveltejs/kit": "1.0.11",
+		"@sveltejs/package": "1.0.2",
+		"@typescript-eslint/eslint-plugin": "^5.48.1",
+		"@typescript-eslint/parser": "^5.48.1",
+		"eslint": "^8.31.0",
+		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"mdsvex": "^0.10.6",
 		"rehype-autolink-headings": "^6.1.1",
 		"rehype-slug": "^5.1.0",
-		"svelte": "^3.54.0",
-		"svelte-check": "^2.10.2",
-		"svelte-social-link": "workspace:^0.0.7",
+		"svelte": "^3.55.1",
+		"svelte-check": "^3.0.2",
 		"svelte-preprocess": "^5.0.0",
+		"svelte-social-link": "link:..\\svelte\\package",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.4",
-		"vite": "^4.0.0"
+		"vite": "^4.0.4"
 	},
 	"type": "module"
 }
