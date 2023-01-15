@@ -40,14 +40,14 @@ jobs:
       - name: 🔨 Install
         run: pnpm install --frozen-lockfile -r
       - name: 🔨 Version
-        id: changesets
+        id: changesets-version
         uses: changesets/action@v1
         with:
           version: pnpm ci:version
       - name: 🔨 Build packages
         run: pnpm all
       - name: 🔨 Publish to npm
-        id: changesets
+        id: changesets-publish
         uses: changesets/action@v1
         with:
           publish: pnpm ci:publish
