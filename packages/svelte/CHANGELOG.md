@@ -1,5 +1,14 @@
 # svelte-social-link
 
+## 0.0.18
+
+### Patch Changes
+
+- [`8758e7e`](https://github.com/Ennoriel/social-links/commit/8758e7e2d4a17ee317d8ee74517707073b6f236e) - up
+
+- Updated dependencies [[`8758e7e`](https://github.com/Ennoriel/social-links/commit/8758e7e2d4a17ee317d8ee74517707073b6f236e)]:
+  - static-social-link@0.0.18
+
 ## 0.0.17
 
 ### Patch Changes
