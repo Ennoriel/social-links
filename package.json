@@ -10,7 +10,7 @@
 		"prepare": "pnpm -r prepare",
 		"lint": "pnpm -r lint",
 		"prettier": "prettier --write ./**/* --no-error-on-unmatched-pattern --ignore-unknown",
-		"ci:version": "changeset version",
+		"ci:version": "changeset version && pnpm update static-social-link --latest --filter site-social-link",
 		"ci:publish": "changeset publish"
 	},
 	"devDependencies": {

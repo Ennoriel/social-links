@@ -101,7 +101,7 @@ importers:
       eslint: ^8.28.0
       eslint-config-prettier: ^8.5.0
       eslint-plugin-svelte3: ^4.0.0
-      static-social-link: workspace:^0.0.17
+      static-social-link: workspace:^0.0.19
       svelte: ^3.54.0
       svelte-check: ^3.0.1
       tslib: ^2.4.1

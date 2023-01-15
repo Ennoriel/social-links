@@ -40,7 +40,7 @@ jobs:
       - name: 🔨 Install
         run: pnpm install --frozen-lockfile -r
       - name: 🔨 Version
-        id: changesets-version
+        id: changesets
         uses: changesets/action@v1
         with:
           version: pnpm ci:version
@@ -49,6 +49,7 @@ jobs:
       - name: 🔨 Build packages
         run: pnpm all
       - name: 🔨 Publish to npm
+        if: steps.changesets.outputs.hasChangesets == 'false'
         id: changesets-publish
         uses: changesets/action@v1
         with:
