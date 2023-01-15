@@ -44,6 +44,8 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm ci:version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 🔨 Build packages
         run: pnpm all
       - name: 🔨 Publish to npm
@@ -52,5 +54,4 @@ jobs:
         with:
           publish: pnpm ci:publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
