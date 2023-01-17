@@ -1,6 +1,6 @@
 {
 	"name": "static-social-link",
-	"version": "0.0.19",
+	"version": "0.0.20",
 	"description": "base utils for use in component libraries",
 	"main": "dist/cjs.js",
 	"module": "dist/esm.js",
