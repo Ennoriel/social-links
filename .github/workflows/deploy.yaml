@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
+
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   publish:
@@ -39,20 +41,10 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: 🔨 Install
         run: pnpm install --frozen-lockfile -r
-      - name: 🔨 Version
-        id: changesets
+      - name: 🔨 Publish to npm
         uses: changesets/action@v1
         with:
           version: pnpm ci:version
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: 🔨 Build packages
-        run: pnpm all
-      - name: 🔨 Publish to npm
-        if: steps.changesets.outputs.hasChangesets == 'false'
-        id: changesets-publish
-        uses: changesets/action@v1
-        with:
           publish: pnpm ci:publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
