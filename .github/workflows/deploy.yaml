@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: 🔨 Clone repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: 🔨 Set up pnpm
         uses: pnpm/action-setup@v2.2.2
         with:
@@ -23,8 +25,8 @@ jobs:
         with:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: 🔨 Install
+        run: pnpm install --frozen-lockfile -r
       - name: 🔨 Publish to npm
         uses: changesets/action@v1
         with:
