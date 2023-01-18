@@ -1,7 +1,7 @@
 {
 	"name": "site-social-link",
 	"private": "true",
-	"version": "0.0.19",
+	"version": "0.0.20",
 	"scripts": {
 		"vercel:prepare": "pnpm -r prepare && pnpm -r package",
 		"prepare": "node ../../scripts/generate.mjs",
