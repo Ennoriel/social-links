@@ -2,9 +2,9 @@ const formatType = ({ key, propsName, type, optional }) => {
 	return `${propsName ?? key}${optional ? '?' : ''}: ${type}${optional ? ' | undefined' : ''};`;
 };
 
-export default ({ app: { args } }) => `
-import { SvelteComponentTyped } from 'svelte';
-import type { StylingProps } from '$lib/types.js';
+export default ({ app: { args } }) =>
+	`import { SvelteComponentTyped } from 'svelte';
+import type { StylingProps } from 'static-social-link';
 
 declare const __propDef: {
 	props: Partial<svelte.JSX.HTMLAttributes<HTMLElementTagNameMap['a']>> &

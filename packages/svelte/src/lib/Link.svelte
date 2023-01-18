@@ -6,9 +6,9 @@
 
 	export let params: Record<string, string | undefined>;
 
-	export let size = 32;
 	export let color: string | undefined = undefined;
 	export let iconColor = 'white';
+	export let size = 32;
 	export let borderRadius: number | undefined = size * (6 / 32);
 	export let round: boolean | undefined = undefined;
 

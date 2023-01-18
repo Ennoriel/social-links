@@ -113,11 +113,11 @@ export default [
 ];
 
 export const defaultValueForDoc = {
-	url: 'https://svelte-awesome-color-picker.vercel.app/',
-	title: 'Maxime Dupont personal blog',
-	hashtag: 'shareLink',
-	hashtags: ['shareLink', 'documentation', 'javascript', 'svelte', 'react'],
-	via: 'Rich_Harris',
-	related: 'Rich_Harris:creator of Svelte, sveltejs:cybernetically enhanced web framework',
-	inReplyTo: undefined
+	url: '"https://svelte-awesome-color-picker.vercel.app/"',
+	title: '"Maxime Dupont personal blog"',
+	hashtag: '"socialShareLinks"',
+	hashtags: "{['socialShareLinks', 'socialMedia', 'javascript', 'svelte', 'react']}",
+	via: '"Rich_Harris"',
+	related: '"Rich_Harris:creator of Svelte, sveltejs:cybernetically enhanced web framework"',
+	inReplyTo: '{undefined}'
 };

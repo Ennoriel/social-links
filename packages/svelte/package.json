@@ -39,7 +39,7 @@
 	"type": "module",
 	"keywords": [
 		"svelte",
-		"link share"
+		"social links"
 	],
 	"types": "./package/index.d.ts",
 	"publishConfig": {

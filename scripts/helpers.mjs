@@ -24,7 +24,7 @@ export const parseArgs = () =>
  *
  * @param {string} filePath
  */
-export const getFilename = (filePath) => path.basename(filePath).slice(0, -3);
+export const getFilename = (filePath) => path.basename(filePath).split('.').slice(0, -1).join('.');
 
 /**
  * Create a folder if it does not already exists

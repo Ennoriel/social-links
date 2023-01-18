@@ -28,5 +28,5 @@
 		"noUnusedParameters": true // Report errors on unused parameters in functions
 	},
 	"include": ["./**/*.ts"],
-	"exclude": ["node_modules/**/*"]
+	"exclude": ["node_modules/**/*", "dist"]
 }

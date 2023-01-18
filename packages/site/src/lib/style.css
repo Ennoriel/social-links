@@ -1,7 +1,7 @@
 html {
 	font-family: 'Segoe UI', sans-serif;
 	font-size: 14px;
-	letter-spacing: 0.04em;
+	line-height: 1.4;
 	--bg-color: white;
 	color: #333;
 }
@@ -13,6 +13,7 @@ body {
 main {
 	max-width: 800px;
 	margin: 16px auto;
+	padding: 0 24px;
 }
 
 button {
@@ -33,7 +34,7 @@ h2,
 h3,
 h4 {
 	font-weight: normal;
-	margin-left: 1rem;
+	margin-left: 0;
 }
 
 h2,
@@ -66,12 +67,13 @@ blockquote {
 /** table */
 table {
 	border-collapse: collapse;
+	width: 100%;
 }
 
 td,
 th {
-	border: 1px solid black;
-	padding: 8px;
+	border: 1px solid #999;
+	padding: 6px;
 }
 
 @media (min-width: 768px) {
@@ -94,8 +96,15 @@ th {
 	font-weight: bold;
 }
 
-.center {
+.text-center {
 	text-align: center;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
 }
 
 ul {
@@ -109,7 +118,7 @@ ul {
 	}
 }
 
-/** scoll stuff */
+/** scroll stuff */
 * {
 	--dark: #ccc;
 	--light: var(--bg-color);
@@ -173,9 +182,14 @@ pre > code[class*='language-'] {
 	font-size: 1em;
 }
 
-pre[class*='language-'],
-:not(pre) > code[class*='language-'] {
+pre[class*='language-'] {
 	background: #2a2a2a;
+}
+
+:not(pre) > code {
+	padding: 1px 4px;
+	border-radius: 4px;
+	border: 1px solid #999;
 }
 
 pre[class*='language-'] {

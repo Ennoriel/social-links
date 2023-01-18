@@ -14,33 +14,17 @@ jobs:
     steps:
       - name: 🔨 Clone repo
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - name: 🔨 Set up pnpm
         uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
-      - name: dir
-        run: |
-          ls -alrt
-          ls ./.github -alrt
-          ls ./.github/workflows -alrt
       - name: 🔨 Set up node
         uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
-          cache: 'pnpm'
-          cache-dependency-path: '**/pnpm-lock.yaml'
-      - name: 🔨 Creating .npmrc
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-            //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          EOF
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: 🔨 Install
-        run: pnpm install --frozen-lockfile -r
       - name: 🔨 Publish to npm
         uses: changesets/action@v1
         with:

@@ -1,9 +1,8 @@
 <script lang="ts">
-	import * as X from 'svelte-social-link';
-	import * as Y from './icons';
-	import { defaultValueForDoc } from '../../../static/src/generateConfig.mjs';
+	import * as Code from './icons/code';
+	import * as Preview from './icons/preview';
+	import Title from './Title.svelte';
 
-	export let api: string | undefined = undefined;
 	export let name: string;
 	export let args: Array<{
 		description: string;
@@ -15,23 +14,15 @@
 	}>;
 </script>
 
-<h3>{name}</h3>
+<Title level="h3" title={name} />
 
-<h4>notice</h4>
+<svelte:component this={Preview[`${name}LinkPreview`]} />
 
-{#if api}
-	<p>
-		You can check the <a href={api} rel="noreferrer noopener">official documentation</a> online.
-	</p>
-{:else}
-	<p>
-		The documentation has not be found online or is not documented because {name} prefer you to use third
-		party script that will track the users.
-	</p>
-	<p>If the documentation exists and you have found it, please submit an issue or a PR!</p>
-{/if}
+<Title level="h4" title="{name} - how to use" />
 
-<h4>Props</h4>
+<svelte:component this={Code[`${name}LinkCode`]} />
+
+<Title level="h4" title="{name} - props" />
 
 <table>
 	<thead>
@@ -59,11 +50,3 @@
 		{/each}
 	</tbody>
 </table>
-
-<h4>How to use</h4>
-
-<svelte:component this={Y[name]} />
-
-<p>Preview</p>
-
-<svelte:component this={X[name]} {...defaultValueForDoc} />
