@@ -1,6 +1,6 @@
 {
 	"$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
-	"changelog": ["@changesets/changelog-github", { "repo": "Ennoriel/link-share" }],
+	"changelog": ["@changesets/changelog-github", { "repo": "Ennoriel/social-links" }],
 	"commit": false,
 	"fixed": [],
 	"linked": [],

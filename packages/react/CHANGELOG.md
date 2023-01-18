@@ -1,4 +1,4 @@
-# svelte-social-link
+# react-social-link
 
 ## 0.1.0
 
