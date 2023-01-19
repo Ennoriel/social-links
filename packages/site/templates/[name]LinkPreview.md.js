@@ -9,9 +9,8 @@ export default ({ app: { name, args } }) =>
 	import { ${name}Link } from 'svelte-social-link';
 </script>
 
-<div class="center">
-	<${name}Link
-		${args.map(formatProps).join('\n\t\t')}
-	/>
-</div>
+<${name}Link
+	${args.map(formatProps).join('\n\t\t')}
+	{...$$restProps}
+/>
 `;

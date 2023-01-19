@@ -5,6 +5,7 @@
 	
 	import componentList from '../../../static/src/generateConfig.mjs';
 
+	import '$lib/style.css';
 </script>
 
 # social-links
@@ -36,13 +37,13 @@ Supported languages:
 <div class="center">
   <img src="/framework/react.svg" alt="react icon"/> React
 
-<img src="/framework/svelte.svg" alt="svelte icon"/> Svelte
-
+  <img src="/framework/svelte.svg" alt="svelte icon"/> Svelte
 </div>
 
 ## Summary
 
 - [Why another library to display sharing ~~buttons~~ links?](#why-another-library-to-display-sharing-buttons-links)
+- [Installation](#installation)
 - [Styling customization](#styling-customization)
 - [Components](#component-props)
 
@@ -78,6 +79,21 @@ What they lack:
 - they are all button based while a link element (`<a href="">`) is enough
 - they are not all well maintained
 - they are all for only one framework
+
+## Installation
+
+<img src="/framework/react.svg" alt="react icon"/> React
+
+```
+npm i --save react-social-link
+```
+
+<br/>
+<img src="/framework/svelte.svg" alt="svelte icon"/> Svelte
+
+```
+npm i --save-dev svelte-social-link
+```
 
 ## Styling customization
 
