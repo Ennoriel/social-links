@@ -113,8 +113,8 @@ export default [
 ];
 
 export const defaultValueForDoc = {
-	url: '"https://svelte-awesome-color-picker.vercel.app/"',
-	title: '"Maxime Dupont personal blog"',
+	url: '"https://social-links-doc.vercel.app/"',
+	title: '"Social media share links working with React and Svelte"',
 	hashtag: '"socialShareLinks"',
 	hashtags: "{['socialShareLinks', 'socialMedia', 'javascript', 'svelte', 'react']}",
 	via: '"Rich_Harris"',
