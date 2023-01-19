@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from './Icon';
-import { getUrl, type Config, type StylingProps } from 'static-social-link';
+import { getUrl, type Config, type StylingProps } from 'static-social-links';
 
 export type LinkProps = React.DetailedHTMLProps<
 	React.AnchorHTMLAttributes<HTMLAnchorElement>,

@@ -1,4 +1,4 @@
-# site-social-link
+# site-social-links
 
 ## 1.0.0
 

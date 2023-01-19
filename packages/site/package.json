@@ -1,5 +1,5 @@
 {
-	"name": "site-social-link",
+	"name": "site-social-links",
 	"private": "true",
 	"version": "1.0.0",
 	"scripts": {
@@ -26,7 +26,7 @@
 		"svelte": "^3.55.1",
 		"svelte-check": "^3.0.2",
 		"svelte-preprocess": "^5.0.0",
-		"svelte-social-link": "link:..\\svelte\\package",
+		"svelte-social-links": "link:..\\svelte\\package",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.4",
 		"vite": "^4.0.4"

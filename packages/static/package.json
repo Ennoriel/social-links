@@ -1,5 +1,5 @@
 {
-	"name": "static-social-link",
+	"name": "static-social-links",
 	"version": "1.0.0",
 	"description": "base utils for use in component libraries",
 	"main": "dist/cjs.js",
@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/Ennoriel/link-share.git"
+		"url": "git+ssh://git@github.com/Ennoriel/social-links.git"
 	},
 	"keywords": [
 		"typescript"
@@ -23,9 +23,9 @@
 	"author": "Maxime Dupont",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Ennoriel/link-share/issues"
+		"url": "https://github.com/Ennoriel/social-links/issues"
 	},
-	"homepage": "https://github.com/Ennoriel/link-share",
+	"homepage": "https://github.com/Ennoriel/social-links",
 	"devDependencies": {
 		"@changesets/cli": "^2.26.0",
 		"@rollup/plugin-commonjs": "^24.0.0",

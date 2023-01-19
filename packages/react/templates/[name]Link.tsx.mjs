@@ -16,7 +16,7 @@ const shouldNotFormat = (arg) => !shouldFormat(arg);
 export default ({ app: { name, args } }) =>
 	`import React from "react";
 import { Link } from "../../Link";
-import { ${name.toLocaleLowerCase()} as config, type StylingProps } from 'static-social-link';
+import { ${name.toLocaleLowerCase()} as config, type StylingProps } from 'static-social-links';
 
 export type ${name}Props = StylingProps & {
 	${args.map(formatExport).join('\n\t')}

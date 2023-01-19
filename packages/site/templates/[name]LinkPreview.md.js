@@ -6,7 +6,7 @@ export const formatProps = ({ key, propsName = key }) => {
 
 export default ({ app: { name, args } }) =>
 	`<script>
-	import { ${name}Link } from 'svelte-social-link';
+	import { ${name}Link } from 'svelte-social-links';
 </script>
 
 <${name}Link

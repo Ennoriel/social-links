@@ -1,4 +1,4 @@
-# static-social-link
+# static-social-links
 
 ## 1.0.0
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { type StylingProps } from 'static-social-link';
+import { type StylingProps } from 'static-social-links';
 
 export type IconProps = StylingProps & {
 	path: string;

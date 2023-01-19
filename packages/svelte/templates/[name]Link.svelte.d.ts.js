@@ -4,7 +4,7 @@ const formatType = ({ key, propsName, type, optional }) => {
 
 export default ({ app: { args } }) =>
 	`import { SvelteComponentTyped } from 'svelte';
-import type { StylingProps } from 'static-social-link';
+import type { StylingProps } from 'static-social-links';
 
 declare const __propDef: {
 	props: Partial<svelte.JSX.HTMLAttributes<HTMLElementTagNameMap['a']>> &

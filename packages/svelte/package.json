@@ -1,11 +1,11 @@
 {
-	"name": "svelte-social-link",
+	"name": "svelte-social-links",
 	"version": "1.0.0",
 	"description": "A Share link component library",
-	"homepage": "https://ennoriel.github.io/Ennoriel/link-share",
+	"homepage": "https://ennoriel.github.io/Ennoriel/social-links",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Ennoriel/link-share"
+		"url": "https://github.com/Ennoriel/social-links"
 	},
 	"author": "Maxime Dupont <m.dupont103@gmail.com>",
 	"license": "MIT",
@@ -34,7 +34,7 @@
 		"vite": "^4.0.0"
 	},
 	"dependencies": {
-		"static-social-link": "workspace:^1.0.0"
+		"static-social-links": "workspace:^1.0.0"
 	},
 	"type": "module",
 	"keywords": [

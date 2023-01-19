@@ -18,7 +18,7 @@ const shouldNotFormat = (arg) => !shouldFormat(arg);
 export default ({ app: { name, args } }) =>
 	`<script lang="ts">
 	import Link from '$lib/Link.svelte';
-	import { ${name.toLocaleLowerCase()} as config } from 'static-social-link';
+	import { ${name.toLocaleLowerCase()} as config } from 'static-social-links';
 
 	${args.map(formatExport).join('\n\t')}
 
