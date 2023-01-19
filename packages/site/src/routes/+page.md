@@ -10,7 +10,7 @@
 
 # social-links
 
-social-links is a set of social media share links working with React and Svelte (at the moment). It takes another approach that most common libraries of that sort: it uses **links** instead of _third party scripts embedded in buttons_.
+[Github repository](https://github.com/Ennoriel/social-links) is a set of social media share links working with React and Svelte (at the moment). It takes another approach that most common libraries of that sort: it uses **links** instead of _third party scripts embedded in buttons_.
 
 Please use it if you care for your user privacy.
 
