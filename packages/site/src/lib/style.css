@@ -2,7 +2,7 @@ html {
 	font-family: 'Segoe UI', sans-serif;
 	font-size: 14px;
 	line-height: 1.4;
-	--bg-color: white;
+	--bg-color: rgb(210, 225, 247);
 	color: #333;
 }
 
@@ -14,6 +14,12 @@ main {
 	max-width: 800px;
 	margin: 16px auto;
 	padding: 0 24px;
+}
+
+section {
+	background-color: white;
+	padding: 24px;
+	margin: 32px 0;
 }
 
 button {
@@ -34,10 +40,10 @@ h2,
 h3,
 h4 {
 	font-weight: normal;
+	margin-top: 0;
 	margin-left: 0;
 }
 
-h2,
 h3,
 h4 {
 	margin-top: 4rem;
@@ -47,9 +53,9 @@ h4 {
 	font-weight: bold;
 }
 
-h1 + h2,
-h2 + h3,
-h3 + h4,
+h1+h2,
+h2+h3,
+h3+h4,
 #default-layout {
 	margin-top: 0;
 }
@@ -84,7 +90,7 @@ th {
 	}
 }
 
-:global(body) {
+body {
 	background-color: var(--bg-color);
 }
 
@@ -126,12 +132,15 @@ ul {
 	scrollbar-color: var(--dark) var(--light);
 	scroll-behavior: smooth;
 }
+
 *::-webkit-scrollbar-track {
 	background: var(--light);
 }
+
 *::-webkit-scrollbar-thumb {
 	background-color: var(--dark);
 }
+
 *::-webkit-scrollbar {
 	width: 7px;
 }
@@ -178,7 +187,7 @@ pre[class*='language-'] {
 	text-shadow: none;
 }
 
-pre > code[class*='language-'] {
+pre>code[class*='language-'] {
 	font-size: 1em;
 }
 
@@ -186,7 +195,7 @@ pre[class*='language-'] {
 	background: #2a2a2a;
 }
 
-:not(pre) > code {
+:not(pre)>code {
 	padding: 1px 4px;
 	border-radius: 4px;
 	border: 1px solid #999;
@@ -205,7 +214,7 @@ pre[class*='language-'] code {
 	display: block;
 }
 
-:not(pre) > code[class*='language-'] {
+:not(pre)>code[class*='language-'] {
 	padding: 0.15em 0.2em 0.05em;
 	border-radius: 0.3em;
 	border: 0.13em solid #7a6652;

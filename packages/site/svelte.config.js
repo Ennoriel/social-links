@@ -9,7 +9,7 @@ const config = {
 		preprocess(),
 		mdsvex({
 			extensions: ['.md'],
-			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
+			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
 		})
 	],
 
@@ -17,16 +17,6 @@ const config = {
 
 	kit: {
 		adapter: vercel()
-	},
-
-	vitePlugin: {
-		experimental: {
-			inspector: {
-				holdMode: true,
-				showToggleButton: 'always',
-				toggleButtonPos: 'bottom-right'
-			}
-		}
 	}
 };
 
