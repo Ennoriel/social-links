@@ -1,5 +1,13 @@
 # site-social-links
 
+## 1.1.0
+
+### Minor Changes
+
+- [`b77e494`](https://github.com/Ennoriel/social-links/commit/b77e494ada42a25787bd2d90f97d061a91b210cb) Thanks [@Ennoriel](https://github.com/Ennoriel)! - Change Twitter icon
+
+- [`b77e494`](https://github.com/Ennoriel/social-links/commit/b77e494ada42a25787bd2d90f97d061a91b210cb) Thanks [@Ennoriel](https://github.com/Ennoriel)! - bump dependencies
+
 ## 1.0.0
 
 ### Major Changes
