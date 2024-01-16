@@ -15,7 +15,7 @@ export default [
 			{
 				file: pkg.browser,
 				format: 'umd',
-				name: pkg.name,
+				name: 'staticSocialLinks',
 				sourcemap: true
 			},
 			{
