@@ -13,7 +13,7 @@ export default [
 				sourcemap: true
 			},
 			{
-				file: pkg.browser,
+				file: 'dist/umd.js',
 				format: 'umd',
 				name: 'staticSocialLinks',
 				sourcemap: true

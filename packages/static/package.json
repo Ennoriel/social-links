@@ -4,7 +4,6 @@
 	"description": "base utils for use in component libraries",
 	"main": "dist/cjs.js",
 	"module": "dist/esm.js",
-	"browser": "dist/umd.js",
 	"types": "dist/types.d.ts",
 	"scripts": {
 		"build": "rollup -c",
