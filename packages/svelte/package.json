@@ -1,6 +1,6 @@
 {
 	"name": "svelte-social-links",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "A Share link component library",
 	"homepage": "https://ennoriel.github.io/Ennoriel/social-links",
 	"repository": {
