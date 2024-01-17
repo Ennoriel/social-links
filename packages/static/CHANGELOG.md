@@ -1,5 +1,11 @@
 # static-social-links
 
+## 1.2.0
+
+### Minor Changes
+
+- [`341b462`](https://github.com/Ennoriel/social-links/commit/341b462a234a5845304ad00cd953e8a7080225c3) Thanks [@Ennoriel](https://github.com/Ennoriel)! - Remove browser entrypoint from package.json
+
 ## 1.1.0
 
 ### Minor Changes

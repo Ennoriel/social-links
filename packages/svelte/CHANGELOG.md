@@ -1,5 +1,12 @@
 # svelte-social-links
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`341b462`](https://github.com/Ennoriel/social-links/commit/341b462a234a5845304ad00cd953e8a7080225c3)]:
+  - static-social-links@1.2.0
+
 ## 2.0.0
 
 ### Major Changes
