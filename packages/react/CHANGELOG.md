@@ -1,5 +1,14 @@
 # react-social-links
 
+## 1.1.2
+
+### Patch Changes
+
+- [`6b1e919`](https://github.com/Ennoriel/social-links/commit/6b1e9192152cb0191ed52b47f321c70ff482d26b) Thanks [@Ennoriel](https://github.com/Ennoriel)! - add the README to the bundle
+
+- Updated dependencies [[`6b1e919`](https://github.com/Ennoriel/social-links/commit/6b1e9192152cb0191ed52b47f321c70ff482d26b)]:
+  - static-social-links@1.2.1
+
 ## 1.1.1
 
 ### Patch Changes
