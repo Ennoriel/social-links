@@ -3,3 +3,4 @@ node_modules
 /src/lib/icons/*
 !/src/lib/icons/.gitkeep
 !/src/lib/icons/README.md
+README.md

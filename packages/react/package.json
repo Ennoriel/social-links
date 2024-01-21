@@ -10,8 +10,9 @@
 	"author": "Maxime Dupont <m.dupont103@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"prepare": "node ../../scripts/generate.mjs",
-		"build": "rollup -c"
+		"build": "rollup -c",
+		"cp:readme": "cp ../../README.md .",
+		"prepare": "node ../../scripts/generate.mjs"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^25.0.7",

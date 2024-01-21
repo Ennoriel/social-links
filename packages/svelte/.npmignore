@@ -1,8 +1,5 @@
-/.changeset
-/.github
 /.svelte-kit
 /.vercel
-/scripts
 /src
 /static
 .eslintignore
@@ -11,7 +8,7 @@
 .npmignore
 .npmrc
 .prettierignore
-.prettierc
+.prettierrc
 pnpm-lock.yaml
 svelte.config.js
 tsconfig.json

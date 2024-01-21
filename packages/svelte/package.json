@@ -10,13 +10,14 @@
 	"author": "Maxime Dupont <m.dupont103@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"prepare": "node ../../scripts/generate.mjs",
-		"dev": "vite dev --open --host",
 		"build": "vite build",
-		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"cp:readme": "cp ../../README.md .",
+		"dev": "vite dev --open --host",
 		"lint": "eslint .",
-		"package": "svelte-kit sync && svelte-package"
+		"package": "svelte-kit sync && svelte-package",
+		"prepare": "node ../../scripts/generate.mjs",
+		"preview": "vite preview"
 	},
 	"peerDependencies": {
 		"svelte": "^4.0.0"

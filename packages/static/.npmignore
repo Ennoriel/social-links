@@ -1,6 +1,6 @@
 .eslintignore
-.eslintrc.js
+.eslintrc.cjs
 .gitignore
-.prettierignore
-.prettierrc.json
 jest.config.js
+rollup.config.mjs
+tsconfig.json

@@ -1,17 +1,18 @@
 {
-	"name": "toto",
+	"name": "social-links",
 	"private": true,
 	"version": "0.0.0",
 	"scripts": {
-		"all": "pnpm prepare && pnpm package && pnpm build",
-		"dev": "pnpm --filter site-social-links dev",
+		"all": "pnpm prepare && pnpm package && pnpm build && pnpm cp:readme",
 		"build": "pnpm -r build",
+		"ci:publish": "pnpm all && changeset publish",
+		"ci:version": "changeset version && pnpm install --no-frozen-lockfile && git add .",
+		"cp:readme": "pnpm -r cp:readme",
+		"dev": "pnpm --filter site-social-links dev",
+		"lint": "pnpm -r lint",
 		"package": "pnpm -r package",
 		"prepare": "pnpm -r prepare",
-		"lint": "pnpm -r lint",
-		"prettier": "prettier --write ./**/* --no-error-on-unmatched-pattern --ignore-unknown",
-		"ci:version": "changeset version && pnpm install --no-frozen-lockfile && git add .",
-		"ci:publish": "pnpm all && changeset publish"
+		"prettier": "prettier --write ./**/* --no-error-on-unmatched-pattern --ignore-unknown"
 	},
 	"devDependencies": {
 		"@changesets/changelog-github": "^0.5.0",

@@ -7,9 +7,10 @@
 	"types": "dist/types.d.ts",
 	"scripts": {
 		"build": "rollup -c",
-		"package": "pnpm build",
 		"changeset": "changeset",
+		"cp:readme": "cp ../../README.md .",
 		"lint": "eslint --ignore-path .gitignore .",
+		"package": "pnpm build",
 		"test": "jest"
 	},
 	"repository": {
